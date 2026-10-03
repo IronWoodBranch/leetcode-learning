@@ -1,0 +1,22 @@
+[project]
+name = "leetcode-practice"
+version = "0.1.0"
+description = "A beginner-friendly Python and LeetCode practice repository"
+requires-python = ">=3.14"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.11",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
